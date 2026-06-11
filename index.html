@@ -4,67 +4,82 @@
 <meta charset="UTF-8">
 
 <style>
+
 *{
-  box-sizing:border-box;
+ box-sizing:border-box;
 }
 
 body{
-  margin:0;
-  height:100vh;
-  background:white;
+ margin:0;
+ height:100vh;
+ background:white;
 }
 
-/* กรอบเหลืองเต็มจอ */
+/* กรอบเหลืองเต็มหน้า */
 .yellow{
-  width:100vw;
-  height:100vh;
-  border:20px solid #fff000;
-  padding:25px;
+ width:100vw;
+ height:100vh;
+ border:20px solid #fff000;
+ padding:25px;
 }
 
 /* กรอบเขียว */
 .green{
-  width:100%;
-  height:100%;
-  border:18px solid #32b000;
-  border-radius:25px;
-  padding:45px;
+ width:100%;
+ height:100%;
+ border:18px solid #32b000;
+ border-radius:25px;
+ padding:45px;
+ overflow:hidden;
 }
+
 
 /* กล่องข้อความ */
 .textbox{
-  width:75%;
-  height:55px;
-  margin:25px auto;
-  background:#222;
-  border-radius:20px;
-  padding:10px 20px;
+ width:75%;
+ height:55px;
+ margin:25px auto;
+ background:#222;
+ border-radius:20px;
+ padding:10px 20px;
+ overflow:hidden;
 }
 
+
+/* ช่องพิมพ์ */
 .textbox input{
-  width:100%;
-  height:100%;
-  background:transparent;
-  border:0;
-  outline:none;
-  color:white;
-  font-size:20px;
+ width:100%;
+ height:100%;
+ background:transparent;
+ border:none;
+ outline:none;
+
+ color:white;
+ font-size:20px;
+
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap;
 }
 
-/* อันแรกเล็ก */
+
+/* กล่องบนสุดเล็ก */
 .textbox:first-child{
-  width:45%;
-  height:35px;
-  margin-top:0;
+ width:45%;
+ height:35px;
+ margin-top:0;
 }
+
 
 .textbox:first-child input{
-  font-size:12px;
+ font-size:12px;
 }
+
 
 </style>
 
 </head>
+
 
 <body>
 
@@ -72,29 +87,36 @@ body{
 
 <div class="green">
 
-<div class="textbox">
-<input placeholder="การจัดอันดับ สารวัตร ☆">
-</div>
 
 <div class="textbox">
-<input placeholder="☆☆☆☆☆ กนกพล ทองแป้น (หัวหน้าสารวัตร">
+<input placeholder="สารวัตร 1/8">
 </div>
 
-<div class="textbox">
-<input placeholder="☆☆☆☆☆ กษิดิศ สุทา ( - ) ">
-</div>
 
 <div class="textbox">
-<input placeholder="☆☆☆☆☆ สรธร มุสิแก้ว ( - ) ">
+<input placeholder="กนกพล ทองแป้น ">
 </div>
 
-<div class="textbox">
-<input placeholder="☆☆☆☆☆ นันท์พิพัฒน์ สุขปลั่ง ( - )">
-</div>
 
 <div class="textbox">
-<input placeholder="☆☆☆☆☆ พิชชากร พันธ์สอน">
+<input placeholder="กษิดิศ สุทา">
 </div>
+
+
+<div class="textbox">
+<input placeholder="สรธร มุสิแก้ว">
+</div>
+
+
+<div class="textbox">
+<input placeholder="นันท์พิพัฒน์ สุขปลั่ง">
+</div>
+
+
+<div class="textbox">
+<input placeholder="พิชชากร พันธ์สอน">
+</div>
+
 
 </div>
 
